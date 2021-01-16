@@ -6,55 +6,50 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 <title>Sadov Andrii</title>
-<style>
-    body {
-        font-family: 'Roboto Slab', serif;
-        font-size: 130%;
-        box-sizing: border-box;
-    }
-    main {
-        display: flex;
-        width: 70%;
-        margin: auto;
-        background-color:#e4e27c;
-        padding: 30px;
-    }
-    .about {
-        
-        position: relative;
-    }
-    .contacts {
-        position:absolute;
-        bottom: 0;
-        left: 0;
-    }
-    .photo {
-        width: 20%;
-    }
-    .icon {
-        width: 24px;
-        margin-left: 24px;
-    }
-
-
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<main>
-<section class="about">
-<h1>Andrii Sadov</h1>
+<main class="main">
+  <section class="about">
+    <div class="container">
+        <div class="about__inner">
+            
+            <img class="about__photo" src="images/photo.jpg" alt="Profile photo">
 
-<p>Student of Mentor-frontend course.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus sequi, fuga cumque 
-perspiciatis voluptatibus dolorem dolor! Numquam voluptatibus fugit non quia nemo 
-dignissimos suscipit illum, dolor optio nihil, reiciendis quidem?</p>
-<section class="contacts">
-    <a href="mailto:sadovam@gmail.com">sadovam@gmail.com</a>
-    <a href="https://t.me/sadovam"><img class="icon" src="images/tg.png" alt="Telegram icon"></a>
-</section>
-</section>
-
-<img class="photo" src="images/photo.jpg" alt="Profile photo">
+            <div class="about__texts">
+                <h1 class="about__name">Andrii Sadov</h1>
+                <h3 class="about__state">Student of Mentor-frontend course.</h3>
+                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus sequi, fuga cumque 
+                perspiciatis voluptatibus dolorem dolor! Numquam voluptatibus fugit non quia nemo 
+                dignissimos suscipit illum, dolor optio nihil, reiciendis quidem?</p>
+                <div class="contacts">
+                    <a class="about__email" href="mailto:sadovam@gmail.com">sadovam@gmail.com</a>
+                    <a class="about__telegram" href="https://t.me/sadovam"><img class="icon" src="images/tg.png" alt="Telegram icon"></a>
+                </div>
+            </div>
+                        
+            
+        
+        </div>
+    </div>  
+  </section>
+    
+  <section class="portfolio">
+    <div class="container">
+        <div class="portfolio__inner">
+            <h2 class=portfolio__title>Portfolio</h2>
+            <div class="portfolio__cards">
+                <div class="portfolio__card">
+                    <h3 class="portfolio__card-title">DiGi Studio</h3>
+                    <a href="https://sadovam.github.io/di-gi" class="portfolio__link">
+                        <img src="images/digi.jpg" alt="DiGi studio" class="portfolio__preview">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>    
+  </section>
+   
 </main>
 </body>
 </html>

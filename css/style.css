@@ -1,0 +1,128 @@
+*,
+*::before,
+ *::after {
+   box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color:#c0ccaa;
+    color: #2e4443;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.about__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 3vw;
+}
+
+.about__name {
+    margin: 0;
+    font-size: 7vw;
+}
+
+.about__state {
+    font-size: 5vw;
+}
+
+.about__text {
+    font-size: 3vw;
+}
+
+.about__photo {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.about__email {
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: #2e4443;
+    padding-right: 1vw;
+}
+
+.about__email, .about__telegram {
+    display: inline-block;
+}
+
+.portfolio__inner {
+    margin: 20px;
+}
+
+.portfolio__title {
+    font-size: 5vw;
+    margin-left: 1vw;
+}
+
+.portfolio__cards {
+    display: flex;
+}
+
+.portfolio__card {
+    border: 3px solid #2f515f;
+    border-radius: 7px;
+    padding: 5px;
+    background-color: #2f515f;
+    
+}
+
+.portfolio__card-title {
+    font-size: 3vw;
+    color:#c0ccaa;
+}
+
+@media only screen and (max-width: 768px) {
+    .about__photo {
+        width: 45%;
+        height: 45%;
+    }
+
+    .about__email, .about__telegram {
+        display: block;
+        padding-bottom: 1vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about__photo {
+        width: 85%;
+        height: 85%;
+    }
+
+    .about__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__texts {
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .about__email, .about__telegram {
+        display: block;
+        padding-bottom: 5vw;
+    }
+    
+}
+
